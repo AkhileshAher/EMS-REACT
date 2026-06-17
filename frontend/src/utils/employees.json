@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "firstname": "Rahul",
+    "email": "e@e.com",
+    "password": "123",
+    "taskNumber": {
+      "total": 3,
+      "active": 2,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 0
+    },
+    "tasks": [
+      {
+        "taskTitle": "Update Inventory Records",
+        "taskDescription": "Verify and update stock quantities in the system.",
+        "taskDate": "2026-06-16",
+        "category": "Inventory",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Prepare Sales Report",
+        "taskDescription": "Generate weekly sales report for management.",
+        "taskDate": "2026-06-15",
+        "category": "Reporting",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "Check Product Expiry",
+        "taskDescription": "Inspect products nearing expiry date.",
+        "taskDate": "2026-06-18",
+        "category": "Quality Control",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstname": "Amit",
+    "email": "employee2@example.com",
+    "password": "123",
+    "taskNumber": {
+      "total": 4,
+      "active": 2,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
+    },
+    "tasks": [
+      {
+        "taskTitle": "Customer Feedback Analysis",
+        "taskDescription": "Review customer feedback and summarize findings.",
+        "taskDate": "2026-06-17",
+        "category": "Desk",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Shelf Arrangement",
+        "taskDescription": "Reorganize products according to store guidelines.",
+        "taskDate": "2026-06-16",
+        "category": "Store Operations",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "Price Tag Verification",
+        "taskDescription": "Ensure all displayed prices are accurate.",
+        "taskDate": "2026-06-19",
+        "category": "Inventory",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Supplier Follow-up",
+        "taskDescription": "Contact suppliers regarding delayed shipments.",
+        "taskDate": "2026-06-20",
+        "category": "Procurement",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstname": "Sneha",
+    "email": "employee3@example.com",
+    "password": "123",
+    "taskNumber": {
+      "total": 5,
+      "active": 3,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
+    },
+    "tasks": [
+      {
+        "taskTitle": "Database Backup",
+        "taskDescription": "Perform scheduled backup of store database.",
+        "taskDate": "2026-06-16",
+        "category": "IT",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "System Maintenance",
+        "taskDescription": "Run maintenance scripts and monitor logs.",
+        "taskDate": "2026-06-18",
+        "category": "IT",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Printer Setup",
+        "taskDescription": "Configure new billing counter printer.",
+        "taskDate": "2026-06-17",
+        "category": "IT Support",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
+      },
+      {
+        "taskTitle": "POS Software Update",
+        "taskDescription": "Update all billing systems to latest version.",
+        "taskDate": "2026-06-21",
+        "category": "Software",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Network Inspection",
+        "taskDescription": "Check connectivity across all counters.",
+        "taskDate": "2026-06-22",
+        "category": "Networking",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "firstname": "Priya",
+    "email": "employee4@example.com",
+    "password": "123",
+    "taskNumber": {
+      "total": 4,
+      "active": 2,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
+    },
+    "tasks": [
+      {
+        "taskTitle": "Vendor Meeting",
+        "taskDescription": "Attend meeting with local suppliers.",
+        "taskDate": "2026-06-17",
+        "category": "Procurement",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "Purchase Order Review",
+        "taskDescription": "Verify pending purchase orders.",
+        "taskDate": "2026-06-18",
+        "category": "Procurement",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Stock Reconciliation",
+        "taskDescription": "Compare physical stock with system records.",
+        "taskDate": "2026-06-19",
+        "category": "Inventory",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Return Processing",
+        "taskDescription": "Handle supplier return requests.",
+        "taskDate": "2026-06-20",
+        "category": "Returns",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "firstname": "Vikram",
+    "email": "employee5@example.com",
+    "password": "123",
+    "taskNumber": {
+      "total": 5,
+      "active": 3,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
+    },
+    "tasks": [
+      {
+        "taskTitle": "Cash Counter Audit",
+        "taskDescription": "Verify cash register balances.",
+        "taskDate": "2026-06-16",
+        "category": "Finance",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "Daily Revenue Summary",
+        "taskDescription": "Prepare summary of daily revenue.",
+        "taskDate": "2026-06-17",
+        "category": "Finance",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Invoice Verification",
+        "taskDescription": "Check supplier invoices for accuracy.",
+        "taskDate": "2026-06-18",
+        "category": "Accounting",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Budget Planning",
+        "taskDescription": "Assist in monthly budget preparation.",
+        "taskDate": "2026-06-21",
+        "category": "Finance",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
+      },
+      {
+        "taskTitle": "Expense Audit",
+        "taskDescription": "Review department expense reports.",
+        "taskDate": "2026-06-22",
+        "category": "Audit",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  }
+]
+

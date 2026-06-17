@@ -1,11 +1,26 @@
 @import "tailwindcss";
 
 * {
-  color: #fff;  
+  /* color: #fff;   */
 }
 
 
 body {
   background-color: #111;
-  color: white;
+}
+
+#tasklist::-webkit-scrollbar {
+  display: none;
+}
+
+.high {
+  background-color: red;
+}
+
+.low {
+  background-color: orangered
+}
+
+.intermediate {
+  background-color: rgb(225, 99, 99);
 }
