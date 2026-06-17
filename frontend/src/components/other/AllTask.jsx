@@ -6,21 +6,18 @@ import TaskStatusCard from "./TaskStatusCard";
 const AllTask = () => {
 
   const authData = useContext(AuthContext);
-  console.log(authData.employees[0].firstname);
 
   return (
-    <div className="bg-[#1c1c1c] p-5 mt-5 rounded text-white h-55 overflow-auto">
-      <div className="bg-gray-400 mb-2 py-2 px-4 flex justify-between rounded">
-        <h2 className="bg-red-200">Employee Name</h2>
-        <h2 className=" bg-red-200">New Task</h2>
-        <h2 className="bg-red-200">Active Task</h2>
-        <h2 className="bg-red-200">Completed Task</h2>
-        <h2 className="bg-red-200">Failed</h2>
+    <div className="bg-[#1c1c1c] p-5 mt-5 rounded text-white h-150 overflow-auto">
+      <div className="mb-2  px-4 flex justify-between rounded">
+        <h2 className="bg-green-500 text-black p-2 rounded-2xl px-4">TASKS : </h2>
       </div>
       <div className="h-[80%] overflow-auto">
-        {authData.employees.map((elem, idx) =>
-          <TaskStatusCard empData={elem} key={idx} />
-        )}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto m-4">
+          {authData.employees.map((elem, idx) =>
+            <TaskStatusCard empData={elem} key={idx} />
+          )}
+        </div>
       </div>
     </div>
   )

@@ -13,14 +13,14 @@ body {
   display: none;
 }
 
-.high {
+.active {
+  background-color: orange;
+}
+
+.completed {
+  background-color: greenyellow;
+}
+
+.failed {
   background-color: red;
-}
-
-.low {
-  background-color: orangered
-}
-
-.intermediate {
-  background-color: rgb(225, 99, 99);
 }
