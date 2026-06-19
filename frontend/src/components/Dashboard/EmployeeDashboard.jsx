@@ -5,7 +5,7 @@ import TaskList from "../TaskList/TaskList"
 
 function EmployeeDashboard({ data, changeUser }) {
     return (
-        <div className="p-18 bg-[#1c1c1c] h-screen text-white">
+        <div className="p-12 sm:p-18 bg-[#1c1c1c] sm:h-screen text-white">
             <Header data={data} changeUser={changeUser} />
             <TaskListNumbers data={data} />
             <TaskList data={data} />
