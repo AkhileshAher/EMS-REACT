@@ -5,7 +5,7 @@ import TaskStatusCard from "./TaskStatusCard";
 
 const AllTask = () => {
 
-  const authData = useContext(AuthContext);
+  const [userData] = useContext(AuthContext);
 
   return (
     <div className="bg-[#1c1c1c] p-5 mt-5 rounded text-white h-150 overflow-auto">
@@ -14,7 +14,7 @@ const AllTask = () => {
       </div>
       <div className="h-[80%] overflow-auto">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto m-4">
-          {authData.employees.map((elem, idx) =>
+          {userData.map((elem, idx) =>
             <TaskStatusCard empData={elem} key={idx} />
           )}
         </div>

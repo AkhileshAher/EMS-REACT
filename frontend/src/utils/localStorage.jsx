@@ -1,6 +1,6 @@
 import employees from './employees.json';
 import admin from './admin.json';
-
+import fs from 'fs';
 
 export const setLocalStorage = () => {
     localStorage.setItem('employees', JSON.stringify(employees));
@@ -19,4 +19,8 @@ export const removeLocalStorageItem = (...arr) => {
     arr.map((item) => {
         localStorage.removeItem(item);
     })
+}
+
+export const writeJson = (data) => {
+    localStorage.setItem("employees",data);
 }

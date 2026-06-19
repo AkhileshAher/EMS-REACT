@@ -2,7 +2,7 @@
 const TaskStatusCard = ({ empData }) => {
     return (
         <>
-            {empData.tasks.map((task, idx) => {
+            {empData.tasks.map(((task, idx) => {
                 return (
                     <div className="w-full max-w-88 space-y-4 rounded-md border border-gray-200 bg-gray-200 p-3 text-black transition-all duration-300 hover:-translate-y-1" key={idx}>
                         <div className="flex items-center justify-between">
@@ -18,7 +18,7 @@ const TaskStatusCard = ({ empData }) => {
                         </div>
                     </div>
                 )
-            })}
+            }))}
         </>
     )
 }

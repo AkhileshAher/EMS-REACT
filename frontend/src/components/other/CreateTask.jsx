@@ -1,24 +1,52 @@
 import { useState } from "react";
+import { writeJson } from "../../utils/localStorage";
 
 
 const CreateTask = () => {
 
     const [taskTitle, setTaskTitle] = useState("");
-    const [taskDescription, setTaskDecriptiom] = useState("");
+    const [taskDescription, setTaskDescription] = useState("");
     const [taskDate, setTaskDate] = useState("");
     const [assignedTo, setAssignedTo] = useState("");
     const [category, setCategory] = useState("");
 
+    const task = {
+        taskTitle,
+        taskDescription,
+        taskDate,
+        category,
+        active: false,
+        newTask: true,
+        failed: false,
+        completed: false
+    };
+
 
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log(taskTitle, taskDate, taskDescription, category, assignedTo);
+
+        const data = JSON.parse(localStorage.getItem("employees"));
+        console.log(data);
+
+
+        data.forEach(function (elem) {
+            if (assignedTo == elem.firstname) {
+                elem.tasks.push(task);
+                elem.taskNumber.newTask += 1;
+                elem.taskNumber.total += 1;
+            }
+        });
+
+        writeJson(data);
+
+
         setTaskTitle("");
         setTaskDate("");
         setAssignedTo("");
-        setTaskDecriptiom("");
+        setTaskDescription("");
         setCategory("")
     }
+
 
     return (
 
@@ -36,9 +64,9 @@ const CreateTask = () => {
                         <input type="date" className="border-2 border-gray-200 w-full p-2 rounded" value={taskDate} onChange={(e) => setTaskDate(e.target.value)} />
                     </div>
 
-                    <div className="te">
+                    <div className="text-lg font-medium pb-1">
                         <h3 className="text-lg font-medium pb-1">Assign To</h3>
-                        <input type="text" className="border-2 border-gray-200 w-full p-2 rounded" placeholder="Employee Name" value={assignedTo} onChange={(e) => setAssignedTo(e.target.value)} />
+                        <input type="text" className="border-2 border-gray-200 w-full p-2 rounded" value={assignedTo} onChange={(e) => setAssignedTo(e.target.value)} />
                     </div>
 
                     <div>
@@ -50,8 +78,8 @@ const CreateTask = () => {
 
                 <div className="w-1/2 flex flex-col">
                     <h3 className="text-lg font-medium pb-1">Description</h3>
-                    <textarea name="" id="" className="border-2 border-gray-100 rounded" rows={10}></textarea>
-                    <button className="w-full bg-emerald-400 p-3 mt-2 rounded-sm" value={taskDescription} onChange={(e) => setTaskDecriptiom(e.target.value)}>Create Task</button>
+                    <textarea name="" id="" className="border-2 border-gray-100 rounded" rows={10} value={taskDescription} onChange={(e) => setTaskDescription(e.target.value)}></textarea>
+                    <button className="w-full bg-emerald-400 p-3 mt-2 rounded-sm" >Create Task</button>
                 </div>
 
 
